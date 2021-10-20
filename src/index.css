@@ -53,3 +53,11 @@ body {
 .navigation-wrapper li a:hover {
   color: #000;
 }
+
+/* Helpers */
+
+.max-width {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
