@@ -1,12 +1,11 @@
 import React from "react";
 import { CardRoll } from "./CardRoll";
+import { SearchBar } from "./SearchBar";
 
 export function Home() {
   return (
     <>
-      <section className="max-width">
-          serach bar
-      </section>
+     <SearchBar />
       <section className="white-stripe">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fuga
         quas aliquid veniam quis doloribus blanditiis eligendi voluptate
