@@ -15,9 +15,8 @@ import Menu from "./components/shared/Menu";
 export default function App() {
   return (
     <Router>
-      <div>
-        <Menu />
-
+      <Menu />
+      <main>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. 
             
@@ -47,7 +46,7 @@ export default function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
+      </main>
     </Router>
   );
 }

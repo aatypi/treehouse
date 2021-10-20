@@ -1,25 +1,50 @@
 .app {
-    min-height: 100vh;
-    background-color: aquamarine;
-    position: relative;
+  min-height: 100vh;
+  background-color: aquamarine;
+  position: relative;
 }
 
 .badge {
-    background-color: white;
-    width: 10em;
-    height: 10em;
-    border: 0.1em solid black;
-    border-radius: 50%; /* CIRKEL om det är samma*/
-    text-align: center;
-    
+  background-color: white;
+  width: 10em;
+  height: 10em;
+  border: 0.1em solid black;
+  border-radius: 50%; /* CIRKEL om det är samma*/
+  text-align: center;
 }
 
-.badge-title{
-    font-size: 1em;
-    display: inline-block;
+html {
+  background-color: #b4ffd1;
+}
+
+body {
+  margin: 0;
+}
+
+.badge-title {
+  font-size: 1em;
+  display: inline-block;
 }
 
 .property-information {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+#Main-Navigation {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+.navigation-wrapper {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.navigation-wrapper li a {
+  text-transform: capitalize;
+  text-decoration: none;
 }
