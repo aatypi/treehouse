@@ -1,0 +1,25 @@
+.app {
+    min-height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+}
+
+.badge {
+    background-color: white;
+    width: 10em;
+    height: 10em;
+    border: 0.1em solid black;
+    border-radius: 50%; /* CIRKEL om det är samma*/
+    text-align: center;
+    
+}
+
+.badge-title{
+    font-size: 1em;
+    display: inline-block;
+}
+
+.property-information {
+    display: flex;
+    flex-direction: row;
+}
