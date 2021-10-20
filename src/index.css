@@ -21,6 +21,11 @@ body {
   margin: 0;
 }
 
+main > * {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .badge-title {
   font-size: 1em;
   display: inline-block;
