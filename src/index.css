@@ -80,6 +80,7 @@ footer {
   overflow: hidden;
   box-shadow: 0 0 12px #ccc;
   background-color: #fff;
+  position: relative;
 }
 
 .card img {
@@ -102,8 +103,16 @@ footer {
   margin: 0 0.5rem;
 }
 
-.like-container {
+.stars-container {
   text-align: right;
+}
+
+.like-container {
+  position: absolute;
+  top: 1rem;
+  left: 5px;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 /* Helpers */

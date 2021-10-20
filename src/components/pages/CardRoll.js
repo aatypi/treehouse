@@ -22,12 +22,12 @@ class Card extends React.Component {
 
     return (
       <div className="card">
-        <div className="like-wrapper" onClick={() => this.handleLike()}>
+        <div className="like-container" onClick={() => this.handleLike()}>
           {this.state.liked ? <FaHeart /> : <FaRegHeart />}
         </div>
         <img src={treehouse} alt="treehouse" width={100} />
         <div className="card-inner">
-          <div className="like-container">
+          <div className="stars-container">
             <FaStar />
             {this.props.stars ? this.props.stars : 0}
           </div>
