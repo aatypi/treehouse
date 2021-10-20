@@ -47,4 +47,9 @@ body {
 .navigation-wrapper li a {
   text-transform: uppercase;
   text-decoration: none;
+  color: #666;
+}
+
+.navigation-wrapper li a:hover {
+  color: #000;
 }
