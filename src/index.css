@@ -90,9 +90,20 @@ footer {
 
 .card-inner {
   padding: 1rem;
+}
+
+.card-inner section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.card svg {
+  margin: 0 0.5rem;
+}
+
+.like-container {
+  text-align: right;
 }
 
 /* Helpers */
