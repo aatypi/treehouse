@@ -31,6 +31,12 @@ body {
   flex-direction: row;
 }
 
+main {
+  min-height: 90vh;
+}
+
+/* Header */
+
 #Main-Navigation {
   display: flex;
   justify-content: space-evenly;
@@ -52,6 +58,12 @@ body {
 
 .navigation-wrapper li a:hover {
   color: #000;
+}
+
+/*  Footer */
+
+footer {
+  background-color: green;
 }
 
 /* Helpers */
