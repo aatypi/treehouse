@@ -77,8 +77,15 @@ footer {
 .card {
   flex: 1 1 30%;
   border-radius: 12px;
+  overflow: hidden;
   box-shadow: 0 0 12px #ccc;
   background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
 }
 
 .card-inner {
