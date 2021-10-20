@@ -1,10 +1,16 @@
 import React from "react";
 import { FaWifi, FaBell, FaEye } from "react-icons/fa";
+import treehouse from "../../images/mateusz-buda-hBZkGJZHEXU-unsplash.jpg"
 
 class Card extends React.Component {
   render() {
     return (
       <div className="card">
+        <img
+          src={treehouse}
+          alt="treehouse"
+          width={100}
+        />
         <div className="card-inner">
           {this.props.name && <h1> {this.props.name}</h1>}
           {this.props.wifi && (
