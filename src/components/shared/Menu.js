@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 // Menu component managing the links for all pages
 export default function Menu() {
   return (
-    <nav>
-      <ul>
+    <nav id="Main-Navigation">
+      <div className="logo"></div>
+      <ul className="navigation-wrapper">
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -22,6 +23,7 @@ export default function Menu() {
           <Link to="/help">Help</Link>
         </li>
       </ul>
+      <div className="secondary-navigation"></div>
     </nav>
   );
 }
