@@ -44,7 +44,7 @@ class Card extends React.Component {
                 <FaBell /> Fire alarm
               </span>
             )}
-            {this.props.wifi && (
+            {this.props.highSecurity && (
               <span>
                 <FaEye /> High security
               </span>
@@ -59,9 +59,9 @@ class Card extends React.Component {
 export function CardRoll() {
   return (
     <section className="card-roll">
-      <Card name="Home 1" wifi fireAlarm highSecurity />
-      <Card name="Home 2" />
-      <Card name="Home 3" />
+      <Card name="Home 1" wifi fireAlarm highSecurity stars={5} />
+      <Card name="Home 2" stars={0} />
+      <Card name="Home 3" highSecurity stars={1} />
     </section>
   );
 }
