@@ -78,7 +78,7 @@ footer {
   flex: 1 1 30%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 0 12px #ccc;
+  box-shadow: 0 0 12px #666;
   background-color: #fff;
   position: relative;
 }
@@ -126,6 +126,32 @@ footer {
   font-size: 1.2rem;
 }
 
+.searchbar {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+}
+
+.searchbar-inner {
+  box-shadow: 0 0 12px #666;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.search-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.search-icon svg {
+  margin: auto;
+}
+
 /* Helpers */
 
 .max-width {
@@ -137,4 +163,6 @@ footer {
 .white-stripe {
   background-color: #fff;
   padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
