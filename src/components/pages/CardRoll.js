@@ -3,14 +3,14 @@ import React from "react";
 class Card extends React.Component {
     render(){
         return (
-            <div> Perro</div>
+            <div className="card"> Perro</div>
             )
         }
 }
 
 export function CardRoll() {
   return (
-    <section className="max-width">
+    <section className="card-roll">
       <Card />
       <Card />
       <Card />
