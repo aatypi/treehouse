@@ -18,8 +18,17 @@ class Card extends React.Component {
     this.setState({ liked: !this.state.liked });
   }
 
-  render() {
+  getStars(total) {
+    let stars = [];
 
+    for (let index = 0; index < total; index++) {
+      stars.push(<FaStar />);
+    }
+
+    return stars;
+  }
+
+  render() {
     return (
       <div className="card">
         <div className="like-container" onClick={() => this.handleLike()}>
@@ -28,8 +37,12 @@ class Card extends React.Component {
         <img src={treehouse} alt="treehouse" width={100} />
         <div className="card-inner">
           <div className="stars-container">
-            <FaStar />
-            {this.props.stars ? this.props.stars : 0}
+            <div className="stars total">
+              {this.getStars(5).map((star) => star)}
+            </div>
+            <div className="stars real">
+              {this.getStars(this.props.stars).map((star) => star)}
+            </div>
           </div>
           {this.props.name && <h1> {this.props.name}</h1>}
           <section>

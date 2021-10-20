@@ -104,7 +104,18 @@ footer {
 }
 
 .stars-container {
-  text-align: right;
+  position: relative;
+}
+
+.stars-container .stars {
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.stars.total {
+  opacity: 0.3;
 }
 
 .like-container {
