@@ -1,58 +1,34 @@
-
 import React from "react";
-import './index.css';
+import "./index.css";
 
+import "./components/shared/Menu";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
-
-import {About} from "./components/pages/about";
-import {Destinations} from "./components/pages/Destinations";
-import {Help} from "./components/pages/Help";
-import {Favorites} from "./components/pages/Favorites";
-import {Hotel} from "./components/pages/Hotel";
-import {Home} from "./components/pages/Home";
+import { About } from "./components/pages/about";
+import { Destinations } from "./components/pages/Destinations";
+import { Help } from "./components/pages/Help";
+import { Favorites } from "./components/pages/Favorites";
+import { Hotel } from "./components/pages/Hotel";
+import { Home } from "./components/pages/Home";
+import Menu from "./components/shared/Menu";
 
 export default function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="/destinations">Destinations</Link>
-            </li>
-          <li>
-              <Link to="/favorites">Favorites</Link>
-            </li>
-            <li>
-              <Link to="/help">Help</Link>
-            </li>
-          </ul>
-        </nav>
+        <Menu />
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. 
             
             Lägg över Home!*/}
         <Switch>
-
           <Route path="/about">
             <About />
           </Route>
 
           <Route path="/destinations">
-            <Destinations />
+            <Destinations name="something" />
           </Route>
 
           <Route path="/help">
@@ -70,10 +46,8 @@ export default function App() {
           <Route path="/">
             <Home />
           </Route>
-
         </Switch>
       </div>
     </Router>
   );
 }
-

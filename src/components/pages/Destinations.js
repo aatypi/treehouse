@@ -1,6 +1,8 @@
 import React from "react";
 
 export function Destinations () {
-        return <h1>Destinations {this.props.name}</h1>;
-  }
+
+      const name= "somehting"
+        return <h1>Destinations {name}</h1>;
+   }
   
