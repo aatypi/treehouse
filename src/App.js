@@ -11,6 +11,7 @@ import { Favorites } from "./components/pages/Favorites";
 import { Hotel } from "./components/pages/Hotel";
 import { Home } from "./components/pages/Home";
 import Menu from "./components/shared/Menu";
+import { Footer } from "./components/shared/Footer";
 
 export default function App() {
   return (
@@ -47,6 +48,8 @@ export default function App() {
           </Route>
         </Switch>
       </main>
+
+      <Footer />
     </Router>
   );
 }
