@@ -29,8 +29,7 @@ class Card extends React.Component {
   }
 
   render() {
-
-    const totalStars = this.getStars(5)
+    const totalStars = this.getStars(5);
     const awardedStars = this.getStars(this.props.stars);
 
     return (
@@ -41,14 +40,16 @@ class Card extends React.Component {
         <img src={treehouse} alt="treehouse" width={100} />
         <div className="card-inner">
           <div className="stars-container">
-            <div className="stars total">
-              {totalStars.map((star) => star)}
-            </div>
-            <div className="stars real">
-              {awardedStars.map((star) => star)}
-            </div>
+            <div className="stars total">{totalStars.map((star) => star)}</div>
+            <div className="stars real">{awardedStars.map((star) => star)}</div>
           </div>
-          {this.props.name && <h1> {this.props.name}</h1>}
+
+          <div className="review-container">
+            {this.props.reviews} reviews
+          </div>
+
+          <h1> {this.props.name}</h1>
+
           <section>
             <h2>Facilities</h2>
             {this.props.wifi === true && (
@@ -81,20 +82,23 @@ export function CardRoll() {
         wifi={true}
         fireAlarm={true}
         highSecurity={true}
+        reviews={10}
         stars={5}
-      />
+        />
       <Card
         name="Home 2"
         wifi={false}
         fireAlarm={false}
         highSecurity={false}
+        reviews={0}
         stars={0}
-      />
+        />
       <Card
         name="Home 3"
         wifi={false}
         fireAlarm={false}
         highSecurity={true}
+        reviews={1}
         stars={1}
       />
     </section>
