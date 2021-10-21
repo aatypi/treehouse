@@ -47,17 +47,17 @@ class Card extends React.Component {
           {this.props.name && <h1> {this.props.name}</h1>}
           <section>
             <h2>Facilities</h2>
-            {this.props.wifi && (
+            {this.props.wifi === true && (
               <span>
                 <FaWifi /> Free Wi-Fi
               </span>
             )}
-            {this.props.wifi && (
+            {this.props.wifi === true && (
               <span>
                 <FaBell /> Fire alarm
               </span>
             )}
-            {this.props.highSecurity && (
+            {this.props.highSecurity === true && (
               <span>
                 <FaEye /> High security
               </span>
@@ -72,9 +72,27 @@ class Card extends React.Component {
 export function CardRoll() {
   return (
     <section className="card-roll">
-      <Card name="Home 1" wifi fireAlarm highSecurity stars={5} />
-      <Card name="Home 2" stars={0} />
-      <Card name="Home 3" highSecurity stars={1} />
+      <Card
+        name="Home 1"
+        wifi={true}
+        fireAlarm={true}
+        highSecurity={true}
+        stars={5}
+      />
+      <Card
+        name="Home 2"
+        wifi={false}
+        fireAlarm={false}
+        highSecurity={false}
+        stars={0}
+      />
+      <Card
+        name="Home 3"
+        wifi={false}
+        fireAlarm={false}
+        highSecurity={true}
+        stars={1}
+      />
     </section>
   );
 }
