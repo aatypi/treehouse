@@ -1,8 +1,9 @@
 import React from "react";
 
-export function Destinations () {
-
-      const name= "somehting"
-        return <h1>Destinations {name}</h1>;
-   }
-  
+export function Destinations() {
+  return (
+    <section className="max-width">
+      <h1>Destinations</h1>
+    </section>
+  );
+}
