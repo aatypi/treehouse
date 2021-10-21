@@ -29,6 +29,10 @@ class Card extends React.Component {
   }
 
   render() {
+
+    const totalStars = this.getStars(5)
+    const awardedStars = this.getStars(this.props.stars);
+
     return (
       <div className="card">
         <div className="like-container" onClick={() => this.handleLike()}>
@@ -38,10 +42,10 @@ class Card extends React.Component {
         <div className="card-inner">
           <div className="stars-container">
             <div className="stars total">
-              {this.getStars(5).map((star) => star)}
+              {totalStars.map((star) => star)}
             </div>
             <div className="stars real">
-              {this.getStars(this.props.stars).map((star) => star)}
+              {awardedStars.map((star) => star)}
             </div>
           </div>
           {this.props.name && <h1> {this.props.name}</h1>}
