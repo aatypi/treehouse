@@ -9,15 +9,17 @@ import {
 } from "react-icons/fa";
 import treehouse from "../../images/mateusz-buda-hBZkGJZHEXU-unsplash.jpg";
 
-class Card extends React.Component {
+export class Card extends React.Component {
+  // defines the card as in a state of not liked
   state = {
-    liked: false,
+    liked: this.props.liked,
   };
 
   handleLike() {
     this.setState({ liked: !this.state.liked });
   }
-
+  //getStar creates array, the for loop adds stars until index is bigger than total
+  // push adds to array
   getStars(total) {
     let stars = [];
 
@@ -39,17 +41,26 @@ class Card extends React.Component {
         </div>
         <img src={treehouse} alt="treehouse" width={100} />
         <div className="card-inner">
+          {
+            // To show the amount of stars the property has.
+            // First creates total max of stars, second real amount of stars. Displayed with css-styling
+            // map goes through every star in array, and display it in the DOM
+          }
           <div className="stars-container">
-            <div className="stars total">{totalStars.map((star) => star)}</div>
+            <div className="stars total">
+              {totalStars.map((star) => {
+                return star;
+              })}
+            </div>
             <div className="stars real">{awardedStars.map((star) => star)}</div>
           </div>
 
-          <div className="review-container">
-            {this.props.reviews} reviews
-          </div>
+          <div className="review-container">{this.props.reviews} reviews</div>
 
           <h1> {this.props.name}</h1>
-
+          {
+            //Creates the facilities icons for the property based on the props
+          }
           <section>
             <h2>Facilities</h2>
             {this.props.wifi === true && (
@@ -74,6 +85,7 @@ class Card extends React.Component {
   }
 }
 
+// Cardroll implements the card prototype, containing the facility and star props
 export function CardRoll() {
   return (
     <section className="card-roll">
@@ -84,7 +96,7 @@ export function CardRoll() {
         highSecurity={true}
         reviews={10}
         stars={5}
-        />
+      />
       <Card
         name="Home 2"
         wifi={false}
@@ -92,7 +104,8 @@ export function CardRoll() {
         highSecurity={false}
         reviews={0}
         stars={0}
-        />
+        liked
+      />
       <Card
         name="Home 3"
         wifi={false}

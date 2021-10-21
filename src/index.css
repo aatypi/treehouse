@@ -126,6 +126,9 @@ footer {
 .stars.total {
   opacity: 0.3;
 }
+.stars.real {
+  color: yellow;
+}
 
 .review-container {
   text-align: right;

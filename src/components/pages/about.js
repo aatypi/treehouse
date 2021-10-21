@@ -1,4 +1,5 @@
 import React from "react";
+import { CardRoll } from "../shared/CardRoll";
 import { PropertyInformation } from "../shared/PropertyInformation";
 
 export function About() {
@@ -9,6 +10,7 @@ export function About() {
     <section className="max-width">
       <h1>About </h1>
       <PropertyInformation></PropertyInformation>
+      <CardRoll />
     </section>
   );
 }
