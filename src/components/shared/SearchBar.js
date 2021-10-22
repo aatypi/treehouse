@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCalendar, FaSearch, FaUserFriends } from "react-icons/fa";
+import DatePickers from "./DatePicker";
 
 export function SearchBar() {
   return (
@@ -11,11 +12,11 @@ export function SearchBar() {
         </div>
         <div>
           <h3>Check In</h3>
-          Pick a Date <FaCalendar />
+          <DatePickers /> <FaCalendar />
         </div>
         <div>
           <h3>Check Out</h3>
-          Pick a Date <FaCalendar />
+          <DatePickers /> <FaCalendar />
         </div>
         <div>
           <h3>Guests</h3>

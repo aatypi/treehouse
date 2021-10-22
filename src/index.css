@@ -163,15 +163,6 @@ footer {
   flex-grow: 1;
 }
 
-.searchbar-inner div {
-  padding-right: 1rem;
-  border-right: 1px solid #666;
-}
-
-.searchbar-inner div:last-child {
-  border-right: none;
-}
-
 .search-icon {
   width: 50px;
   display: flex;
