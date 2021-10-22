@@ -1,5 +1,6 @@
 import React from "react";
 import { CardRoll } from "../shared/CardRoll";
+import IconBar from "../shared/IconBar";
 import { PropertyInformation } from "../shared/PropertyInformation";
 
 export function About() {
@@ -7,10 +8,13 @@ export function About() {
   const text = "japp";
 
   return (
-    <section className="max-width">
-      <h1>About </h1>
-      <PropertyInformation></PropertyInformation>
-      <CardRoll />
-    </section>
+    <>
+      <section className="max-width">
+        <h1>About </h1>
+        <PropertyInformation></PropertyInformation>
+        <CardRoll />
+      </section>
+      <IconBar />
+    </>
   );
 }

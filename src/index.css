@@ -171,6 +171,9 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  appearance: none;
+  outline: none;
+  border: none;
 }
 
 .search-icon * {
@@ -200,4 +203,36 @@ footer {
   padding: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.icon-stripe {
+  background-image: url("images/forest-931706.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 50vh;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.icon-container .icon {
+  flex: 0 0 auto;
+  display: block;
+  background-color: aquamarine;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+}
+
+.icon-container .icon img {
+  margin: auto;
 }

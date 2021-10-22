@@ -1,5 +1,6 @@
 import React from "react";
 import { CardRoll } from "../shared/CardRoll";
+import IconBar from "../shared/IconBar";
 import SearchBar from "../shared/SearchBar";
 
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
 
         <CardRoll />
       </section>
+      <IconBar />
     </>
   );
 }
