@@ -147,6 +147,7 @@ footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
+  position: relative;
 }
 
 .searchbar h3 {
@@ -164,10 +165,26 @@ footer {
 }
 
 .search-icon {
-  width: 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+}
+
+.search-icon * {
+  margin: auto;
+}
+
+.pop-up {
+  box-shadow: 0 0 12px #666;
+  position: absolute;
+  background-color: #fff;
+  padding: 1rem;
+  top: 0;
+  right: 0;
+  margin: auto;
 }
 
 /* Helpers */

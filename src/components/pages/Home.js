@@ -1,6 +1,6 @@
 import React from "react";
 import { CardRoll } from "../shared/CardRoll";
-import { SearchBar } from "../shared/SearchBar";
+import SearchBar from "../shared/SearchBar";
 
 export function Home() {
   return (
