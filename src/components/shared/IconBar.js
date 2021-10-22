@@ -1,6 +1,8 @@
 import React from "react";
 import icon from "../../images/BIGBEN.svg";
 
+//Imports icon for destinations
+// adds circles to iconadd
 class IconCircle extends React.Component {
   render() {
     return (
@@ -11,7 +13,8 @@ class IconCircle extends React.Component {
     );
   }
 }
-
+// creates iconbar for destinations
+// adds label on the circles
 const IconBar = () => {
   return (
     <div className="icon-stripe">
