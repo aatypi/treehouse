@@ -122,6 +122,7 @@ footer {
   box-shadow: 0 0 12px #666;
   background-color: #fff;
   position: relative;
+  color: #000;
 }
 
 .card img {
@@ -225,11 +226,25 @@ footer {
 
 .destination {
   min-height: 50vh;
+  display: flex;
 }
 
-.destination:nth-child(odd) {
+.destination-info {
+  width: 50%;
+  padding: 1rem;
+}
+
+.destination-cards {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.destination:nth-child(even) {
   background-color: green;
   color: #fff;
+  flex-direction: row-reverse;
 }
 
 /* Helpers */
@@ -272,7 +287,7 @@ footer {
   justify-content: space-around;
 }
 
-.icon-container .icon {
+.icon {
   flex: 0 0 auto;
   display: block;
   background-color: aquamarine;
