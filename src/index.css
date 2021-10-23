@@ -227,6 +227,11 @@ footer {
   min-height: 50vh;
 }
 
+.destination:nth-child(odd) {
+  background-color: green;
+  color: #fff;
+}
+
 /* Helpers */
 
 .max-width {
@@ -252,13 +257,19 @@ footer {
   min-height: 50vh;
 }
 
+.icon-container a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
 .icon-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10rem;
   justify-content: space-around;
-  text-align: center;
-  font-size: 1.2rem;
 }
 
 .icon-container .icon {
