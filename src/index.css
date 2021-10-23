@@ -223,6 +223,10 @@ footer {
   margin: auto;
 }
 
+.destination {
+  min-height: 50vh;
+}
+
 /* Helpers */
 
 .max-width {
