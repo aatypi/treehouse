@@ -72,6 +72,39 @@ footer {
   padding: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  color: #fff;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper * {
+  flex: 1 1 25%;
+}
+
+.text-box {
+  background-color: aquamarine;
+  border-radius: 12px;
+  color: #000;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.subscribe-button {
+  background-color: aquamarine;
+  border: none;
+  outline: 0;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 5px;
+}
+
+.subscribe input {
+  border: none;
+  outline: 0;
+  padding: 5px;
 }
 
 /* Cards */
