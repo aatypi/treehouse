@@ -39,7 +39,7 @@ export default function App() {
             <Favorites />
           </Route>
 
-          <Route path="/hotel/:name">
+          <Route path="/hotel">
             <Hotel />
           </Route>
 
