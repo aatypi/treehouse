@@ -1,12 +1,14 @@
 import React from "react";
 import { CardRoll } from "../shared/CardRoll";
 import IconBar from "../shared/IconBar";
+import { PropertyInformation } from "../shared/PropertyInformation";
 import SearchBar from "../shared/SearchBar";
 
 export function Home() {
   return (
     <>
       <SearchBar />
+      <IconBar />
       <section className="white-stripe">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fuga
         quas aliquid veniam quis doloribus blanditiis eligendi voluptate
@@ -18,7 +20,7 @@ export function Home() {
 
         <CardRoll />
       </section>
-      <IconBar />
+      <PropertyInformation />
     </>
   );
 }
