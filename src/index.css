@@ -72,6 +72,39 @@ footer {
   padding: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  color: #fff;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper * {
+  flex: 1 1 25%;
+}
+
+.text-box {
+  background-color: aquamarine;
+  border-radius: 12px;
+  color: #000;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.subscribe-button {
+  background-color: aquamarine;
+  border: none;
+  outline: 0;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 5px;
+}
+
+.subscribe input {
+  border: none;
+  outline: 0;
+  padding: 5px;
 }
 
 /* Cards */
@@ -89,6 +122,7 @@ footer {
   box-shadow: 0 0 12px #666;
   background-color: #fff;
   position: relative;
+  color: #000;
 }
 
 .card img {
@@ -190,6 +224,29 @@ footer {
   margin: auto;
 }
 
+.destination {
+  min-height: 50vh;
+  display: flex;
+}
+
+.destination-info {
+  width: 50%;
+  padding: 1rem;
+}
+
+.destination-cards {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.destination:nth-child(even) {
+  background-color: green;
+  color: #fff;
+  flex-direction: row-reverse;
+}
+
 /* Helpers */
 
 .max-width {
@@ -215,16 +272,22 @@ footer {
   min-height: 50vh;
 }
 
+.icon-container a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
 .icon-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10rem;
   justify-content: space-around;
-  text-align: center;
-  font-size: 1.2rem;
 }
 
-.icon-container .icon {
+.icon {
   flex: 0 0 auto;
   display: block;
   background-color: aquamarine;

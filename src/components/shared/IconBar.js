@@ -6,10 +6,12 @@ import icon from "../../images/BIGBEN.svg";
 class IconCircle extends React.Component {
   render() {
     return (
+      <a href={"/destinations#"+this.props.label}>
       <div className="icon">
         <img src={icon} alt="" width={75} height={75} />
         {this.props.label}
       </div>
+      </a>
     );
   }
 }
