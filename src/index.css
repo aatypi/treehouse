@@ -286,6 +286,41 @@ a:link {
   flex-direction: row-reverse;
 }
 
+/* Hotel Page */
+
+.hotel-description {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.description-box {
+  width: 60%;
+  padding: 1rem;
+}
+
+.book-box {
+  padding: 1rem;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 12px;
+  max-height: 250px;
+}
+
+.book-box-inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book-box-inner div {
+  flex: 1 1 50%;
+}
+
+.mark-favorite {
+  color: #fff;
+}
+
 /* Helpers */
 
 .max-width {
@@ -294,11 +329,23 @@ a:link {
   margin: auto;
 }
 
+.title-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+}
+
+.image-stripe {
+  background-image: url("images/mateusz-buda-hBZkGJZHEXU-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
 .white-stripe {
   background-color: #fff;
-  padding: 1rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 /*ICON*/
 .icon-stripe {

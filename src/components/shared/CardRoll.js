@@ -7,6 +7,7 @@ import {
   FaHeart,
   FaRegHeart,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import treehouse from "../../images/mateusz-buda-hBZkGJZHEXU-unsplash.jpg";
 
 export class Card extends React.Component {
@@ -35,7 +36,7 @@ export class Card extends React.Component {
     const awardedStars = this.getStars(this.props.stars);
 
     return (
-      <div className="card">
+      <Link className="card" to="/hotel">
         <div className="like-container" onClick={() => this.handleLike()}>
           {this.state.liked ? <FaHeart /> : <FaRegHeart />}
         </div>
@@ -80,7 +81,7 @@ export class Card extends React.Component {
             )}
           </section>
         </div>
-      </div>
+      </Link>
     );
   }
 }
