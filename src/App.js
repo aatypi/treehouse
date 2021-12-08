@@ -12,6 +12,7 @@ import { Hotel } from "./components/pages/Hotel";
 import { Home } from "./components/pages/Home";
 import Menu from "./components/shared/Menu";
 import { Footer } from "./components/shared/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (

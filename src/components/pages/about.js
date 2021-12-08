@@ -11,10 +11,10 @@ export function About() {
     <>
       <section className="max-width">
         <h1>About </h1>
-        <PropertyInformation></PropertyInformation>
         <CardRoll />
       </section>
       <IconBar />
+      <PropertyInformation></PropertyInformation>
     </>
   );
 }
